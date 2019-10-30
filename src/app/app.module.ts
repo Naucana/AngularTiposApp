@@ -9,12 +9,11 @@ import { PaisesModule } from './paises/paises.module';
 import { HttpClientModule } from '@angular/common/http';
 import { PromesasModule } from './promesas/promesas.module';
 import { ObservablesModule } from './observables/observables.module';
-import { PruebasComponent } from './pruebas/pruebas.component';
+import { UsuariosGithubModule } from './usuarios-github/usuarios-github.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PruebasComponent
+    AppComponent   
   ],
   imports: [
     BrowserModule,
@@ -23,7 +22,8 @@ import { PruebasComponent } from './pruebas/pruebas.component';
     PaisesModule,
     HttpClientModule,
     PromesasModule,
-    ObservablesModule
+    ObservablesModule,
+    UsuariosGithubModule
   ],
   providers: [],
   bootstrap: [AppComponent]

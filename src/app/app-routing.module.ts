@@ -6,6 +6,7 @@ const routes: Routes = [
   {path: 'paises', loadChildren: () => import('./paises/paises.module').then(m => m.PaisesModule)},
   {path: 'promesas', loadChildren: () => import('./promesas/promesas.module').then(m => m.PromesasModule)},
   {path: 'observables', loadChildren: () => import('./observables/observables.module').then(m => m.ObservablesModule)},
+  {path: 'usuariosGithub', loadChildren: () => import('./usuarios-github/usuarios-github.module').then(m => m.UsuariosGithubModule)},
   {path: '**', redirectTo: 'paises'}
 ];
 
